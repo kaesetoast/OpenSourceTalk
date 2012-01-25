@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script src="lib/mootools.js"></script>
+	<script src="lib/hashchange.js"></script>
+	<script src="lib/frame.js"></script>
+	<script src="lib/presenter.js"></script>
+	<script>
+		"use strict";
+		window.addEvent('domready', function(){
+			var loaded  = 0,
+			    iframes = $$('iframe');
+			iframes.addEvent('load', function(){
+				loaded++;
+				if(loaded === iframes.length){
+					Pik6.init(iframes);
+					loaded = 0;
+				}
+			});
+		});
+	</script>
+	<link href="lib/presenter.css" rel="stylesheet">
+</head>
+<body>
+	<div id="Pik6-wrapper">
+		<div id="Pik6-timecontainer">
+			<span id="Pik6-framecontrols-slidecount">0 / 0</span>
+			<span id="Pik6-elapsed">00:00:00</span><br><span id="Pik6-time">00:00:00</span>
+		</div>
+		<iframe id="Pik6-frame" id="Mainframe" name="Mainframe" src="lib/start.html"></iframe>
+		<iframe id="Pik6-frame-preview" src="lib/start.html"></iframe>
+		<select id="Pik6-slideselect"></select>
+		<div id="Pik6-framecontrols">
+			<a accesskey="r" id="Pik6-reload-presentation" title="Reload the current presentation">Reload</a>
+			|
+			<a accesskey="b" id="Pik6-browse" href="presentations" target="Mainframe" title="Browse the presentations directory">Browse</a>
+			|
+			<a accesskey="o" id="Pik6-open-presentation" title="Load a presentation via url">Open</a>
+		</div>
+	</div>
+</body>
+</html>

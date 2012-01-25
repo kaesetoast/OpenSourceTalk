@@ -1,0 +1,90 @@
+html, body {
+	background: #FFF;
+	overflow: hidden;
+	font-size: 15px;
+	font-family: Arial, sans-serif;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+a, a:link, a:visited {
+	color: #000;
+	border-bottom: 1px solid #000;
+	cursor: pointer;
+	text-decoration: none;
+}
+a:hover, a:active {
+	color: #000;
+	border-bottom: 1px solid transparent;
+}
+
+#Pik6-wrapper {
+	position: relative;
+	width: 960px;
+	margin: 0 auto;
+}
+
+iframe {
+	background: #FFF;
+	border: 4px solid #FFF;
+	box-shadow: 0 0 64px -12px #000;
+	display: block;
+	z-index: 1;
+	padding: 0;
+	margin: 32px 0 0 0;
+}
+iframe:hover {
+	z-index: 1337;
+}
+#Pik6-frame {
+	position: relative;
+	float: left;
+	width: 640px;
+	height: 480px;
+}
+#Pik6-frame-preview {
+	position: absolute;
+	top: 64px;
+	right: 0;
+	width: 410px;
+	height: 308px;
+}
+
+#Pik6-timecontainer {
+	font-size: 21px;
+	color: #EEE;
+	text-align: right;
+	position: absolute;
+	top: 32px;
+	right: 0;
+}
+#Pik6-timecontainer span {
+	color: #000;
+}
+#Pik6-elapsed {
+	font-weight: bold;
+}
+#Pik6-framecontrols-slidecount {
+	font-size: 40px;
+	font-weight: bold;
+	float: left;
+	margin-right: 32px
+}
+
+
+#Pik6-slideselect {
+	font-size: inherit;
+	width: 296px;
+	position: absolute;
+	top: 432px;
+	right: 0;
+}
+
+#Pik6-framecontrols {
+	text-align: right;
+	position: absolute;
+	top: 480px;
+	right: 0;
+	margin: 0;
+}
