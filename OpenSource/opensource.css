@@ -48,6 +48,10 @@
   font-size: 14px;
 }
 
+.deck-container li {
+	margin-top: 15px;
+}
+
 @media print {
   .theme-menu {
     display: none !important;
