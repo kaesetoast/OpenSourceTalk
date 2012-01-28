@@ -9,5 +9,9 @@ $(function() {
 	$('#transition-themes').change(function() {
 		$('#transition-theme-link').attr('href', $(this).val());
 	});
+	
+	$(".slide").click(function(){
+		$.deck('next');
+	});
 });
 
