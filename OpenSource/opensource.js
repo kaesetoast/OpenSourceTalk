@@ -10,7 +10,7 @@ $(function() {
 		$('#transition-theme-link').attr('href', $(this).val());
 	});
 	
-	$(".slide").click(function(){
+	$(document).click(function(){
 		$.deck('next');
 	});
 });
