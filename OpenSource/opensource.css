@@ -52,6 +52,10 @@
 	margin-top: 15px;
 }
 
+.deck-container li ul li {
+	margin-bottom: -15px;
+}
+
 @media print {
   .theme-menu {
     display: none !important;
